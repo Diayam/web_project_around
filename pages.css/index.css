@@ -8,10 +8,7 @@ body {
     font-family: "Inter";
     background-color: #2a2c2f;
     color: #fff;
-    min-width: 320px;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
+    min-width: 320px;   
     display: table;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -44,14 +41,21 @@ body {
     border-radius: 50%;
 }
 
+.profile__info-edit{
+    display: flex;
+    align-items: baseline;
+}
+
+
 
 .profile__content {
+    display: flex;
     margin-top: 50px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
+    gap: 20px;
     align-items: center;
+  
+  
+
 }
 
 .profile__img-avatar {
@@ -64,8 +68,14 @@ body {
 
 .profile__info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+  flex-wrap: wrap;
+  padding: 40px 0 50px;
+  
+   
 }
+
+
 
 .profile__name {
     font-family: Inter;
@@ -76,15 +86,70 @@ body {
     text-align: left;
     max-width: 373px;
     Height: 39px;
+    margin: 0;
 }
 
-/*.profile__button{
- background-color: #fff;
-}*/
 
+.profile__button-edit {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background: #000;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 18px;
+    position: relative;
+    background: url(../images/lapiz.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .profile__button-add{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: #000;
+    border: 1px solid #fff;
+    color: white;       
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    background: url(../images/suma.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 @media screen and (max-width: 768px) {
 
+   .profile__name{
+    font-size: 24px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 196px;
+
+   }
+   .profile__edit {
+    align-items: center;
+  }
+  .profile__button-add {
+    width: 282px;
+    height: 50px;
+  }
+  .profile__content{
+    flex-direction: column;
+  }
+  .profile__info{
+    align-items: center;
+    padding: 0;
+  }
 }
 
 
