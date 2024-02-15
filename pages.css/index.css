@@ -1,5 +1,7 @@
 body {
     background-color: #2A2C2F;
+    max-width: 880px;
+    margin: auto;
 }
 
 .page {
@@ -9,7 +11,7 @@ body {
     background-color: #2a2c2f;
     color: #fff;
     min-width: 320px;   
-    display: table;
+    
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -71,6 +73,7 @@ body {
     flex-direction: column;    
   flex-wrap: wrap;
   padding: 40px 0 50px;
+  flex-basis: 65%;
   
    
 }
@@ -138,6 +141,7 @@ body {
    }
    .profile__edit {
     align-items: center;
+    
   }
   .profile__button-add {
     width: 282px;
