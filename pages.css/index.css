@@ -10,8 +10,7 @@ body {
     font-family: "Inter";
     background-color: #2a2c2f;
     color: #fff;
-    min-width: 320px;   
-    
+    min-width: 320px;    
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -34,10 +33,7 @@ body {
     margin-top: 45px;
     padding-bottom: 41px;
     width: 100%;
-
-    
 }
-
 
 .profile__img-avatar{
     border-radius: 50%;
@@ -48,16 +44,11 @@ body {
     align-items: baseline;
 }
 
-
-
 .profile__content {
     display: flex;
     margin-top: 50px;
     gap: 20px;
     align-items: center;
-  
-  
-
 }
 
 .profile__img-avatar {
@@ -73,12 +64,8 @@ body {
     flex-direction: column;    
   flex-wrap: wrap;
   padding: 40px 0 50px;
-  flex-basis: 65%;
-  
-   
+  flex-basis: 65%;  
 }
-
-
 
 .profile__name {
     font-family: Inter;
@@ -91,7 +78,6 @@ body {
     Height: 39px;
     margin: 0;
 }
-
 
 .profile__button-edit {
     width: 24px;
@@ -112,7 +98,6 @@ body {
     background-repeat: no-repeat;
   }
 
-
   .profile__button-add{
     width: 150px;
     height: 50px;
@@ -126,6 +111,13 @@ body {
     background: url(../images/suma.png);
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .element__card {
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+
   }
 
 @media screen and (max-width: 768px) {
