@@ -161,6 +161,20 @@ body {
     align-items: center;
     padding: 0;
   }
+
+  .cards {
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 282px;
+    height: 2268px;
+    grid-template-columns: repeat(1, 1fr);
+   
+    
+    border: 1px;
+
+  }
 }
 
 
