@@ -113,15 +113,28 @@ body {
     background-repeat: no-repeat;
   }
 
-  .element__card {
+  .cards {
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 66px;
     gap: 1rem;
-   
-  }
+   }
 
+   .card{
+
+   }
+
+   .card__image {
+      width: 100%;
+   }
+
+   .card__text {
+
+   }
+   .card__link-button {
+
+   }
 @media screen and (max-width: 768px) {
 
    .profile__name{
