@@ -27,7 +27,7 @@ top: -36px;
 right: -36px;
 position: absolute;
 background-color: #000000;
-
+background-repeat: no-repeat;
 }
 
 .popup__edit {
@@ -88,7 +88,39 @@ background-color: #000000;
     .popup__edit {
         width: 282px;
         height: 322px;
+  
+
+    }
+
+    .popup__close-button {
+        width: 26px;
+        height: 26px;
+        top:-36px;
+        right: 8px;
+        background-image: url(../images/CloseIcon.png);
+
+    }
+
+    .popup {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 42px;
+    }
+
+    .popup__input {
+        width: 238px;
+        height: 27px;
 
 
+    }
+    .popup__save-button {
+        width: 238px;
+        height: 46px;
+        border-radius: 2px;
+    
     }
 }
