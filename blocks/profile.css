@@ -59,9 +59,14 @@
     background: url(../images/lapiz.png);
     background-position: center;
     background-repeat: no-repeat;
+    
   }
 
-  .profile__button-add{
+.profile__button-edit:hover {
+  transform: scale(1.05);
+}
+
+  .profile__button-add {
     width: 150px;
     height: 50px;
     border-radius: 5px;
@@ -76,6 +81,9 @@
     background-repeat: no-repeat;
   }
 
+  .profile__button-add:hover {
+    transform: scale(1.05);
+  }
   @media screen and (max-width: 768px) {
     .profile__name{
         font-size: 24px;
