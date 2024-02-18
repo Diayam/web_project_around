@@ -1,164 +1,145 @@
-body {
-    background-color: #2A2C2F;
-    max-width: 880px;
-    margin: auto;
+@import url(../vendor/normalize.css);
+@import url(../fonts/fonts.css);
+@import url(../blocks/header.css);
+@import url(../blocks/page.css);
+@import url(../blocks/profile.css);
+@import url(../blocks/card.css);
+@import url(../blocks/footer.css);
+
+
+
+.popup {
+    display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 100;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.3s;
+
+}
+.popup__container{
+
+    
+    
+
 }
 
-.page {
-    max-width: 100%;
-    margin: auto;
-    font-family: "Inter";
-    background-color: #2a2c2f;
-    color: #fff;
-    min-width: 320px;   
-    
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
+.popup__close-button {
+background-image: url(../images/iconclose.png);
+width: 40px;
+height: 40px;
+top: -36px;
+right: -36px;
+position: absolute;
+background-color: #000000;
+background-repeat: no-repeat;
 }
 
-.header {
-    display: flex;
-    justify-content: left;
-    
-    justify-items: left;
-    border-bottom:  3px solid #f3f1f1;
-}
-.header__logo {
-    max-width: 173px;
-    max-height: 33px;
+.popup__edit {
     position: relative;
-    margin-top: 45px;
-    padding-bottom: 41px;
-    width: 100%;
-
-    
-}
-
-
-.profile__img-avatar{
-    border-radius: 50%;
-}
-
-.profile__info-edit{
     display: flex;
-    align-items: baseline;
-}
-
-
-
-.profile__content {
-    display: flex;
-    margin-top: 50px;
-    gap: 20px;
-    align-items: center;
-  
-  
-
-}
-
-.profile__img-avatar {
-    max-width: 120px;
-    height: 120px;
-    top: 159px;
-    left: 200px;
-
-}
-
-.profile__info {
-    display: flex;
-    flex-direction: column;    
-  flex-wrap: wrap;
-  padding: 40px 0 50px;
-  flex-basis: 65%;
-  
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px 0px 30px 70px;
+    border-radius: 10px;
+    width: 430px;
+    height: 330px;
+    gap: 18px;
    
 }
 
-
-
-.profile__name {
-    font-family: Inter;
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    max-width: 373px;
-    Height: 39px;
-    margin: 0;
+.popup__title {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 900;
+        margin-top: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 330px;
+        height: 23px;
+      
 }
 
-
-.profile__button-edit {
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-    background: #000;
-    border: 1px solid #fff;
-    color: white;
+.popup__input  {
+    width: 358px;
+    height: 27.26px;
+     margin-bottom: 30px;
+     padding-bottom: 10px;
+    font-family: Inter;
     font-size: 14px;
-    line-height: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    border: none;
+    border-bottom: 1px solid #000000;
+  
+
+}
+
+.popup__input_about {
+  
+    
+  }
+
+
+.popup__save-button {
+  background-color: #000;
+    width: 358px;
+    height: 50.15px;
+    border-radius: 2px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
     text-align: center;
+    color: #FFFFFF;
     text-decoration: none;
-    cursor: pointer;
-    margin-left: 18px;
-    position: relative;
-    background: url(../images/lapiz.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    display: inline-block;
+    transition: bacgroud-color 0.3s;
+}
+
+.popup_opened {
+    opacity: 1;
+    pointer-events: unset;
+    display: flex;
   }
 
 
-  .profile__button-add{
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background: #000;
-    border: 1px solid #fff;
-    color: white;       
-    cursor: pointer;
-    margin: auto;
-    position: relative;
-    background: url(../images/suma.png);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 
 @media screen and (max-width: 768px) {
 
-   .profile__name{
-    font-size: 24px;
-    line-height: 28px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 196px;
+    .popup__edit {
+        width: 282px;
+        height: 322px;
+ }
 
-   }
-   .profile__edit {
-    align-items: center;
+    .popup__close-button {
+        width: 26px;
+        height: 26px;
+        top:-36px;
+        right: 8px;
+        background-image: url(../images/CloseIcon.png);
+
+    }
+
+
+    .popup__input {
+        width: 238px;
+        height: 27px;
+
+
+    }
+    .popup__save-button {
+        width: 238px;
+        height: 46px;
+        border-radius: 2px;
     
-  }
-  .profile__button-add {
-    width: 282px;
-    height: 50px;
-  }
-  .profile__content{
-    flex-direction: column;
-  }
-  .profile__info{
-    align-items: center;
-    padding: 0;
-  }
-}
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
+    }
 }

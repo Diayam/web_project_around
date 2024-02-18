@@ -11,28 +11,88 @@
 </head>
 <body>
     <div class="page">
-        <header class="header">
-            <img src="images/logoVector.png" alt="logo" class="header__logo"/>
-        </header>
+            <header class="header">
+                <img src="images/logoVector.png" alt="logo" class="header__logo"/>
+            </header>
         <section class="profile__content">
             <div class="profile__avatar">
                 <img src="images/Avatar.jpg" alt="Avatar" class="profile__img-avatar">
             </div>
             <div class="profile__info">
-                <div class="profile__info-edit">
-               <h1 class="profile__name">Jacqueus Cousteau</h1>
-               <button class="profile__button-edit"></button>
-            </div>
-                <p class="profile__subname">Explorer</p>
-           
-            </div>
-           
-            
-            <button class="profile__button-add"></button>
-           
-             
-                </div>    
+                    <div class="profile__info-edit">
+                        <h1 class="profile__name">Jacqueus Cousteau</h1>
+                        <button class="profile__button-edit"></button>
+                    </div>
+                        <p class="profile__subname">Explorer</p>
+                </div>
+                    <button class="profile__button-add"></button>
+            </div>    
         </section>
+            <main class="cards"> 
+                <div class="card">
+                    <img src="./images/Yosemitevalley.png" all="yosemite" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Yosemite Valley</h2>
+                        <div class="card__like-button"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/LakeLouise.jpg" alt="lake" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Lake Louise</h2>
+                        <div class="card__like-button"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/BaldMountains.jpg" alt="baldmontain" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Bald Mountains</h2>
+                        <div class="card__like-button"></div>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img src="./images/Latemar.jpg" alt="latermar" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Latermar</h2>
+                        <div class="card__like-button"></div>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img src="./images/VanoiseNationa.jpg" alt="vanoise" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Vanoise National</h2>
+                        <div class="card__like-button"></div>
+                    </div> 
+                    </div>
+                <div class="card">
+                    <img src="./images/LagodiBraies.jpg" alt="lago" class="card__image">
+                    <div class="card__button">
+                        <h2 class="card__text">Lago di Baries</h2>
+                        <div class="card__like-button"></div>
+                    </div>
+                </div>
+            </main>
+            <div class="popup">
+                <div class="popup__container">
+                    
+                    <form class="popup__edit" id="popup__edit-form">
+                        <h2 class="popup__title">Edit Profile</h2>
+                        <input class="popup__input popup__input_name" type="text"
+                         id="name" placeholder="Jacqueus Cousteau" required
+                        minlength="2"
+                        maxlength="40" />
+                        <input class="popup__input popup__input_about" type="text" 
+                        id="about" placeholder="Explorer" required
+                        minlength="2"
+                        maxlength="40"/>
+                        <button class="popup__save-button" type="submit">save</button>
+                        <button class="popup__close-button"></button>
+                    </form>
+                </div>
+            </div>
+            <footer >
+                <h2 class="footer-copyright">&#169;2024 Diana Y Espinoza</h2>
+            </footer>
     </div>
-</body>
+    <script src="./script/script.js"></script>
 </html>
