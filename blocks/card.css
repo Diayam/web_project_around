@@ -30,7 +30,7 @@
    .card__button {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+
     text-align: center;
    }
 
@@ -40,7 +40,7 @@
     height: 23px;
     background-repeat: no-repeat;
     background-position: center;
-
+    
    }
 @media screen and (max-width: 768px) {
    .cards {

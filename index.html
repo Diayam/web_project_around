@@ -75,10 +75,16 @@
             <div class="popup">
                 <div class="popup__container">
                     
-                    <form class="popup__edit">
+                    <form class="popup__edit" id="popup__edit-form">
                         <h2 class="popup__title">Edit Profile</h2>
-                        <input class="popup__input popup__input_name" type="text" />
-                        <input class="popup__input popup__input_about" type="text" />
+                        <input class="popup__input popup__input_name" type="text"
+                         id="name" placeholder="Jacqueus Cousteau" required
+                        minlength="2"
+                        maxlength="40" />
+                        <input class="popup__input popup__input_about" type="text" 
+                        id="about" placeholder="Explorer" required
+                        minlength="2"
+                        maxlength="40"/>
                         <button class="popup__save-button" type="submit">save</button>
                         <button class="popup__close-button"></button>
                     </form>
