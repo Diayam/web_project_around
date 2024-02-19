@@ -40,8 +40,14 @@
     height: 23px;
     background-repeat: no-repeat;
     background-position: center;
-    
+    cursor: pointer;
    }
+
+   .card__like-button:hover{
+      transform: scale(1.05);
+
+   }
+
 @media screen and (max-width: 768px) {
    .cards {
   
