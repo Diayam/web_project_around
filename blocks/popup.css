@@ -16,7 +16,7 @@
 
 }
 
-.popup_opened {
+.popup__open {
     opacity: 1;
     pointer-events: unset;
     display: flex;
