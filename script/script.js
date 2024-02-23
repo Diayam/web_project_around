@@ -20,9 +20,9 @@ function save(event) {event.preventDefault()
 console.log("hola")
 }
 
-profileButtonEdit.addEventListener("click",openpopup);
+profileButtonEdit.addEventListener("click", openpopup);
 popupCloseButton.addEventListener("click" , closspopup);
-popupSaveButton.addEventListener("click",openpopup);
+popupSaveButton.addEventListener("click", openpopup);
 
 
 
