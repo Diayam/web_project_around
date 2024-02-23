@@ -10,33 +10,22 @@ const popupSaveButton = document.querySelector(".popup__save-button");
 popuInputName.value = profileNameElement.textContent;
 popupInputAbout.value = profileSubnameElement.textContent;
 
-function openpopup() {
+function openPopup() {
     popup.classList.add("popup__open");
 }
-function closspopup() {
+function clossPopup() {
     popup.classList.remove("popup__open");
 }
-function save(event) {event.preventDefault()
-console.log("hola")
+function save(event) {
+    event.preventDefault()
+    profileNameElement.textContent = popuInputName.value;
+    profileSubnameElement.textContent = popupInputAbout.value;
+    clossPopup()
+ 
+  
 }
 
-profileButtonEdit.addEventListener("click", openpopup);
-popupCloseButton.addEventListener("click" , closspopup);
-popupSaveButton.addEventListener("click", openpopup);
+profileButtonEdit.addEventListener("click", openPopup);
+popupCloseButton.addEventListener("click" , clossPopup);
+popupSaveButton.addEventListener("click", save);
 
-
-
-
-
-/*const profileContentElelement =document.querySelector(".prefile__content");
-
-
-
-
-
-
-const profileName = profileNameElement.textContent;
-const profileSubname = profileSubnameElement.textContent;
-console.log(profileName);
-console.log(profileSubname);
-*/
