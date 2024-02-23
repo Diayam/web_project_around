@@ -18,3 +18,13 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+    .page {
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+}
