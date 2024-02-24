@@ -17,7 +17,7 @@
    }
 
    .card__text {
-   
+    color: black;
     width: 246px;
     height: 30px;
     font-family: Inter;
