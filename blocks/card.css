@@ -30,8 +30,7 @@
    .card__button {
     align-items: center;
     display: flex;
-
-    text-align: center;
+   text-align: center;
    }
 
    .card__like-button {
