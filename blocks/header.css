@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: left;
+    
+    justify-items: left;
+    border-bottom:  3px solid #f3f1f1;
+}
+.header__logo {
+    max-width: 173px;
+    max-height: 33px;
+    position: relative;
+    margin-top: 45px;
+    padding-bottom: 41px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 320px;
+        display: flex;
+        align-items: center;
+        
+    }
+}
+
