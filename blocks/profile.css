@@ -1,6 +1,4 @@
-.profile__img-avatar{
-    border-radius: 50%;
-}
+
 
 .profile__info-edit{
     display: flex;
@@ -16,6 +14,7 @@
 
 .profile__img-avatar {
     max-width: 120px;
+    border-radius: 50%;
 }
 
 .profile__info {
