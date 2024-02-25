@@ -23,8 +23,6 @@
 .profile__info {
   display: flex;
   flex-direction: column;    
-  flex-wrap: wrap;
-  padding: 40px 0 50px;
   flex-basis: 65%;  
 }
 
