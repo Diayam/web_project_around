@@ -24,7 +24,7 @@
 
 .profile__info {
     display: flex;
-    flex-direction: column;    
+  flex-direction: column;    
   flex-wrap: wrap;
   padding: 40px 0 50px;
   flex-basis: 65%;  
@@ -56,7 +56,7 @@
     cursor: pointer;
     margin-left: 18px;
     position: relative;
-    background: url(../images/lapiz.png);
+    background-image: url(../images/lapiz.png);
     background-position: center;
     background-repeat: no-repeat;
     
@@ -72,11 +72,11 @@
     border-radius: 5px;
     background: #000;
     border: 1px solid #fff;
-    color: white;       
+    color: #fff;      
     cursor: pointer;
     margin: auto;
     position: relative;
-    background: url(../images/suma.png);
+    background-image: url(../images/suma.png);
     background-position: center;
     background-repeat: no-repeat;
   }
