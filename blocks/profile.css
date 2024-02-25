@@ -17,13 +17,11 @@
 .profile__img-avatar {
     max-width: 120px;
     height: 120px;
-    top: 159px;
-    left: 200px;
-
+ 
 }
 
 .profile__info {
-    display: flex;
+  display: flex;
   flex-direction: column;    
   flex-wrap: wrap;
   padding: 40px 0 50px;
@@ -72,7 +70,6 @@
     border-radius: 5px;
     background: #000;
     border: 1px solid #fff;
-    color: #fff;      
     cursor: pointer;
     margin: auto;
     position: relative;
