@@ -59,3 +59,17 @@
       margin-top: 42px;
    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+   .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);  
+      margin-left: 110px;
+   }
+   
+   .card {
+      width: 282px;
+      
+   }
+
+}
