@@ -3,7 +3,7 @@
   align-items: baseline;
 }
 
-.profile__content {
+.profile {
   display: flex;
   margin-top: 50px;
   gap: 20px;
@@ -95,7 +95,7 @@
     height: 50px;
   }
 
-  .profile__content {
+  .profile {
     flex-direction: column;
 
   }
