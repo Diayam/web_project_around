@@ -3,7 +3,7 @@
   align-items: baseline;
 }
 
-.profile_content {
+.profile__content {
   display: flex;
   margin-top: 50px;
   gap: 20px;
