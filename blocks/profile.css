@@ -111,7 +111,9 @@
   .profile {
     align-items: center;
     margin: 42px 0 36px;
+    width: 118%;
   }
+
   .profile__button-add {
     margin: auto;
   }
