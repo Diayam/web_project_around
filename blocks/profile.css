@@ -3,14 +3,14 @@
   align-items: baseline;
 }
 
-.profile_content {
+.profile__content {
   display: flex;
   margin-top: 50px;
   gap: 20px;
   align-items: center;
 }
 
-.profile__img-avatar {
+.profile__avatar-img {
   max-width: 120px;
   border-radius: 50%;
 }
