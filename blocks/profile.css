@@ -1,105 +1,107 @@
-.profile__info-edit{
-    display: flex;
-    align-items: baseline;
+.profile__info-edit {
+  display: flex;
+  align-items: baseline;
 }
 
 .profile__content {
-    display: flex;
-    margin-top: 50px;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+  align-items: center;
 }
 
 .profile__img-avatar {
-    max-width: 120px;
-    border-radius: 50%;
+  max-width: 120px;
+  border-radius: 50%;
 }
 
 .profile__info {
   display: flex;
-  flex-direction: column;    
-  flex-basis: 65%;  
+  flex-direction: column;
+  flex-basis: 65%;
 }
 
 .profile__name {
-    font-family: Inter;
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin: 0;
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
 }
 
 .profile__button-edit {
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-    background: #000;
-    border: 1px solid #fff;
-    color: white;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-left: 18px;
-    position: relative;
-    background-image: url(../images/lapiz.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background: #000;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 18px;
+  position: relative;
+  background-image: url(../images/lapiz.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
 
 .profile__button-edit:hover {
   transform: scale(1.05);
 }
 
+.profile__button-add {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background: #000;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  background-image: url(../images/suma.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__button-add:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+
+  .profile__name {
+    font-size: 24px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 196px;
+
+  }
+
+  .profile__edit {
+    align-items: center;
+
+  }
+
   .profile__button-add {
-    width: 150px;
+    width: 282px;
     height: 50px;
-    border-radius: 5px;
-    background: #000;
-    border: 1px solid #fff;
-    cursor: pointer;
-    margin: auto;
-    position: relative;
-    background-image: url(../images/suma.png);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
-  .profile__button-add:hover {
-    transform: scale(1.05);
-  }
-  @media screen and (max-width: 768px) {
+  .profile__content {
+    flex-direction: column;
 
-    .profile__name{
-        font-size: 24px;
-        line-height: 28px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 196px;
-    
-       }
-
-       .profile__edit {
-        align-items: center;
-        
-      }
-      .profile__button-add {
-        width: 282px;
-        height: 50px;
-      }
-      
-      .profile__content{
-        flex-direction: column;
-
-      }
-      .profile__info{
-        align-items: center;
-        padding: 0;
-      }
   }
 
+  .profile__info {
+    align-items: center;
+    padding: 0;
+  }
+}
