@@ -10,8 +10,7 @@ body {
     font-family: "Inter";
     background-color: #2a2c2f;
     color: #fff;
-     min-width: 320px;  
-    
+     min-width: 320px;      
 }
 
 
@@ -19,7 +18,6 @@ body {
     .page {
         display: flex;
         flex-direction: column;
-       
         align-items: center;
     }
 }

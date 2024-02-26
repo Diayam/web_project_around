@@ -1,7 +1,6 @@
 .header {
     display: flex;
     justify-content: left;
-    
     justify-items: left;
     border-bottom:  3px solid #f3f1f1;
 }
