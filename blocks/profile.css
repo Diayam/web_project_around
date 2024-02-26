@@ -92,8 +92,10 @@
         width: 282px;
         height: 50px;
       }
+      
       .profile__content{
         flex-direction: column;
+
       }
       .profile__info{
         align-items: center;

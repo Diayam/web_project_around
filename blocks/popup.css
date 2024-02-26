@@ -22,9 +22,6 @@
     display: flex;
   }
 
-.popup__container{
-
-}
 
 .popup__close-button {
 background-image: url(../images/iconclose.png);
@@ -90,7 +87,7 @@ background-repeat: no-repeat;
     color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
-    transition: bacgroud-color 0.3s;
+    transition: background-color 0.3s;
 
 }
 
