@@ -2,8 +2,9 @@
     display: flex;
     justify-content: left;
     justify-items: left;
-    border-bottom:  3px solid #f3f1f1;
+    border-bottom: 3px solid #f3f1f1;
 }
+
 .header__logo {
     max-width: 173px;
     max-height: 33px;
@@ -18,7 +19,6 @@
         width: 320px;
         display: flex;
         align-items: center;
-        
+
     }
 }
-
