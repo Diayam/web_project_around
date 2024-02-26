@@ -64,7 +64,8 @@
    .cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);  
-      margin-left: 110px;
+      justify-items: center;
+      align-items: center;
    }
    
    .card {
