@@ -1,5 +1,5 @@
 body {
-    background-color: #2A2C2F;
+    background-color: #000;
     max-width: 880px;
     margin: auto;
 }
@@ -8,7 +8,7 @@ body {
     max-width: 100%;
     margin: auto;
     font-family: "Inter";
-    background-color: #2a2c2f;
+    background-color: #000;
     color: #fff;
     min-width: 320px;
 }
@@ -21,3 +21,10 @@ body {
         align-items: center;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .page {
+        max-width: 64%;
+    }
+   
+    }

@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Diana Espinoza"/>
-    <meta name="description" content="Around The U.S"/>
-    <meta name="keywords" content="Around,html,css"/>
-    <link rel="stylesheet" href="./pages.css/index.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Diana Espinoza" />
+    <meta name="description" content="Around The U.S" />
+    <meta name="keywords" content="Around,html,css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Around The U.S</title>
-</head>
-        <body>
-            <div class="page">
-                <header class="header">
-                    <img src="images/logoVector.png" alt="logo" class="header__logo"/>
-                </header>
-                <main class="container"> 
-                    <section class="profile">
-                        <div class="profile__avatar">
-                            <img src="images/Avatar.jpg" alt="Avatar" class="profile__avatar-img">
-                        </div>
-                        <div class="profile__info">
-                            <div class="profile__info-edit">
-                                <h1 class="profile__name">Jacqueus Cousteau</h1>
-                                <button class="profile__button-edit"></button>
-                            </div>
-                            <p class="profile__subname">Explorer</p>
-                        </div>
-                            <button class="profile__button-add"></button>   
-                    </section>
-                    <section class="cards">
-                        <div class="card">
-                            <img src="./images/Yosemitevalley.png" alt="yosemite" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Yosemite Valley</h2>
-                                <div class="card__like-button"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/LakeLouise.jpg" alt="lake" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Lake Louise</h2>
-                                <div class="card__like-button"></div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/BaldMountains.jpg" alt="baldmontain" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Bald Mountains</h2>
-                                <div class="card__like-button"></div>
-                            </div>    
-                        </div>
-                        <div class="card">
-                            <img src="./images/Latemar.jpg" alt="latermar" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Latermar</h2>
-                                <div class="card__like-button"></div>
-                            </div>    
-                        </div>
-                        <div class="card">
-                            <img src="./images/VanoiseNationa.jpg" alt="vanoise" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Vanoise National</h2>
-                                <div class="card__like-button"></div>
-                            </div> 
-                        </div>
-                        <div class="card">
-                            <img src="./images/LagodiBraies.jpg" alt="lago" class="card__image">
-                            <div class="card__button">
-                                <h2 class="card__text">Lago di Baries</h2>
-                                <div class="card__like-button"></div>
-                            </div>
-                        </div>
-                    </section> 
-                </main>
-                <div class="popup">
-                    <div class="popup__container">
-                        
-                        <form class="popup__edit" id="popup__edit-form">
-                            <h2 class="popup__title">Edit Profile</h2>
-                            <input class="popup__input popup__input_name" type="text"
-                            id="name"  required
-                            minlength="2"
-                            maxlength="40" />
-                            <input class="popup__input popup__input_about" type="text" 
-                            id="about"  required
-                            minlength="2"
-                            maxlength="40"/>
-                            <button class="popup__save-button" type="submit">save</button>
-                            <button class="popup__close-button"></button>
-                        </form>
-                    </div>
-                </div>
-                <footer >
-                    <h2 class="footer-copyright">&#169;2024 Diana Y Espinoza</h2>
-                </footer>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="images/logoVector.png" alt="logo" class="header__logo" />
+      </header>
+      <main class="container">
+        <section class="profile">
+          <div class="profile__avatar">
+            <img
+              src="images/Avatar.jpg"
+              alt="Avatar"
+              class="profile__avatar-img"
+            />
+          </div>
+          <div class="profile__info">
+            <div class="profile__info-edit">
+              <h1 class="profile__name">Jacqueus Cousteau</h1>
+              <button class="profile__button-edit"></button>
             </div>
-            <script src="./script/script.js"></script>
-        </body>
+            <p class="profile__subname">Explorer</p>
+          </div>
+          <button class="profile__button-add"></button>
+        </section>
+        <section class="cards">
+          <div class="card">
+            <img
+              src="./images/Yosemitevalley.png"
+              alt="yosemite"
+              class="card__image"
+            />
+            <div class="card__button">
+              <h2 class="card__text">Yosemite Valley</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/LakeLouise.jpg" alt="lake" class="card__image" />
+            <div class="card__button">
+              <h2 class="card__text">Lake Louise</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/BaldMountains.jpg"
+              alt="baldmontain"
+              class="card__image"
+            />
+            <div class="card__button">
+              <h2 class="card__text">Bald Mountains</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/Latemar.jpg"
+              alt="latermar"
+              class="card__image"
+            />
+            <div class="card__button">
+              <h2 class="card__text">Latermar</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/VanoiseNationa.jpg"
+              alt="vanoise"
+              class="card__image"
+            />
+            <div class="card__button">
+              <h2 class="card__text">Vanoise National</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/LagodiBraies.jpg"
+              alt="lago"
+              class="card__image"
+            />
+            <div class="card__button">
+              <h2 class="card__text">Lago di Baries</h2>
+              <div class="card__like-button"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="popup">
+        <div class="popup__container" >
+          <h2 class="popup__title">Edit Profile</h2>
+          <form class="popup__edit" id="popup__edit-form">
+            <input
+              class="popup__input popup__input_name"
+              type="text"
+              id="name"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <input
+              class="popup__input popup__input_about"
+              type="text"
+              id="about"
+              required
+              minlength="2"
+              maxlength="40"
+            />
+            <button class="popup__save-button" type="submit">save</button>
+            <button class="popup__close-button"></button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <h2 class="footer-copyright">&#169;2024 Diana Y Espinoza</h2>
+      </footer>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
