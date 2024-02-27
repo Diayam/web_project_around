@@ -27,24 +27,28 @@
     background-image: url(../images/iconclose.png);
     width: 40px;
     height: 40px;
-    top: -36px;
+    top: -134px;
     right: -36px;
     position: absolute;
-    background-color: #000000;
+    background-color: transparent;
     background-repeat: no-repeat;
+    border: unset;
 }
 
 .popup__close-button:hover {
     transform: scale(1.05);
 }
 
+.popup__container {
+    background-color: #fff;
+    padding: 30px 0px 30px 70px;
+    border-radius: 10px;
+}
+ 
 .popup__edit {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    padding: 30px 0px 30px 70px;
-    border-radius: 10px;
     width: 430px;
     height: 330px;
     gap: 18px;
@@ -59,6 +63,8 @@
     text-align: left;
     width: 330px;
     height: 23px;
+    color: #000;
+    
 }
 
 .popup__input {
