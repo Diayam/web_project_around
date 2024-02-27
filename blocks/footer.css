@@ -9,7 +9,6 @@
   text-align: left;
   color: #6f6d6d;
   padding: 10px 0 24px 26px;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -17,6 +16,5 @@
     max-width: 282px;
     height: 14px;
     margin: auto;
-
   }
 }
