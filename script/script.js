@@ -7,6 +7,9 @@ const popuInputName = document.querySelector(".popup__input_name");
 const popupInputAbout = document.querySelector(".popup__input_about");
 const profileForm = document.querySelector(".popup__edit");
 
+
+
+
 popuInputName.value = profileNameElement.textContent;
 popupInputAbout.value = profileSubnameElement.textContent;
 

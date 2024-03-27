@@ -15,12 +15,6 @@
   transition: opacity 0.3s;
 }
 
-.popup1 {
-    margin: 10px;
-    width: 519px;
-    height: 330px;
-   
-}
 .popup__open {
   opacity: 1;
   pointer-events: unset;
