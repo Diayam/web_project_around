@@ -7,7 +7,8 @@ const popuInputName = document.querySelector(".popup__input_name");
 const popupInputAbout = document.querySelector(".popup__input_about");
 const profileForm = document.querySelector(".popup__edit");
 
-
+const editForm = document.querySelector("#edit__add");
+const buttonEditAdd = document.querySelector(".profile__button-add");
 
 
 popuInputName.value = profileNameElement.textContent;
@@ -25,7 +26,13 @@ function save(event) {
   profileSubnameElement.textContent = popupInputAbout.value;
   clossPopup();
 }
+function openEdit() {
+  editForm.classList.add("popup__open");
+}
+
 
 profileButtonEdit.addEventListener("click", openPopup);
 popupCloseButton.addEventListener("click", clossPopup);
 profileForm.addEventListener("submit", save);
+
+buttonEditAdd.addEventListener("click", openEdit);
